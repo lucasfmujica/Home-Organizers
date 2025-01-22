@@ -367,3 +367,58 @@ section {
         display: none !important;
     }
 }
+
+/* Form Elements */
+input[type='email'] {
+    width: 100%;
+    padding: var(--spacer-12) var(--spacer-16);
+    border: 1px solid var(--color-neutral);
+    background-color: var(--color-light);
+}
+
+button {
+    padding: var(--spacer-12) var(--spacer-24);
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Circular number containers for steps */
+.steps-grid > div > div:first-child {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.step-card {
+    background-color: var(--color-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
+}
+
+.step-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.step-card ul {
+    padding-left: 0;
+}
